@@ -1,0 +1,4 @@
+h = "sadbutsad"
+n = "sad"
+
+print(h.find(n))
