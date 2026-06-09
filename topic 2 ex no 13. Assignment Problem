@@ -1,0 +1,17 @@
+from itertools import permutations
+
+cost = [[3,10,7],
+        [8,5,12],
+        [4,6,9]]
+
+m = 999
+
+for p in permutations(range(3)):
+    s = 0
+
+    for i in range(3):
+        s += cost[i][p[i]]
+
+    m = min(m,s)
+
+print(m)
