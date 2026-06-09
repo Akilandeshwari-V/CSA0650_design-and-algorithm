@@ -1,0 +1,7 @@
+a = []
+
+if len(a) == 0:
+    print("List is empty")
+else:
+    a.sort()
+    print(a[-1])
