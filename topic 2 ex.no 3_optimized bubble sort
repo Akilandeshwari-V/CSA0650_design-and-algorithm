@@ -1,0 +1,12 @@
+a = [64,25,12,22,11]
+
+for i in range(len(a)):
+    s = False
+    for j in range(len(a)-1-i):
+        if a[j] > a[j+1]:
+            a[j],a[j+1] = a[j+1],a[j]
+            s = True
+    if not s:
+        break
+
+print(a)
