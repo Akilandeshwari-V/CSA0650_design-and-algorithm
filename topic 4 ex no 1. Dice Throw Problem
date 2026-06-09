@@ -1,0 +1,16 @@
+dice = 2
+sides = 6
+target = 7
+
+dp = [0]*(target+1)
+dp[0] = 1
+
+for i in range(dice):
+    ndp = [0]*(target+1)
+    for j in range(target+1):
+        for k in range(1,sides+1):
+            if j+k <= target:
+                ndp[j+k] += dp[j]
+    dp = ndp
+
+print(dp[target])
