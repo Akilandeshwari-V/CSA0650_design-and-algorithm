@@ -1,0 +1,6 @@
+a = [1,2,3,1]
+
+for i in range(len(a)):
+    if (i==0 or a[i]>a[i-1]) and (i==len(a)-1 or a[i]>a[i+1]):
+        print(i)
+        break
