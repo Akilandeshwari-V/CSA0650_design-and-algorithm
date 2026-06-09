@@ -1,0 +1,7 @@
+s = "leetcode"
+d = ["leet","code"]
+
+if s == "".join(d):
+    print(True)
+else:
+    print(False)
