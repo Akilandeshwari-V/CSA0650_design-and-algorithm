@@ -1,0 +1,15 @@
+s = "abbxxxxzzy"
+a = []
+i = 0
+
+while i < len(s):
+    j = i
+    while j < len(s) and s[j] == s[i]:
+        j += 1
+
+    if j - i >= 3:
+        a.append([i,j-1])
+
+    i = j
+
+print(a)
