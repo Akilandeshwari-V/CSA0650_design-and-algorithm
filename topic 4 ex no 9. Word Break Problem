@@ -1,0 +1,7 @@
+s = "ilike"
+d = ["i","like","sam","sung"]
+
+for w in d:
+    s = s.replace(w,"")
+
+print("Yes" if s=="" else "No")
