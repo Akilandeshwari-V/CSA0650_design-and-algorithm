@@ -1,4 +1,0 @@
-a = [5, 2, 8, 1, 9]
-
-print("Maximum =", max(a))
-print("Minimum =", min(a))
