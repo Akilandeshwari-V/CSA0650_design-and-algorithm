@@ -1,0 +1,26 @@
+board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
+
+r = len(board)
+c = len(board[0])
+new = [[0]*c for _ in range(r)]
+
+for i in range(r):
+    for j in range(c):
+        live = 0
+
+        for x in [-1,0,1]:
+            for y in [-1,0,1]:
+                if x==0 and y==0:
+                    continue
+
+                ni,nj = i+x,j+y
+
+                if 0<=ni<r and 0<=nj<c:
+                    live += board[ni][nj]
+
+        if board[i][j]==1 and live in [2,3]:
+            new[i][j]=1
+        elif board[i][j]==0 and live==3:
+            new[i][j]=1
+
+print(new)
