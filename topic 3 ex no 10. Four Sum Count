@@ -1,0 +1,15 @@
+A=[1,2]
+B=[-2,-1]
+C=[-1,2]
+D=[0,2]
+
+c = 0
+
+for a in A:
+    for b in B:
+        for c1 in C:
+            for d in D:
+                if a+b+c1+d==0:
+                    c += 1
+
+print(c)
