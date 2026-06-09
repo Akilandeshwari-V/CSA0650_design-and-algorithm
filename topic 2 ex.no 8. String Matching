@@ -1,0 +1,10 @@
+words = ["mass","as","hero","superhero"]
+a = []
+
+for i in words:
+    for j in words:
+        if i!=j and i in j:
+            a.append(i)
+            break
+
+print(a)
