@@ -1,0 +1,10 @@
+nums = [1,2,1]
+s = 0
+
+for i in range(len(nums)):
+    d = set()
+    for j in range(i, len(nums)):
+        d.add(nums[j])
+        s += len(d)**2
+
+print(s)
