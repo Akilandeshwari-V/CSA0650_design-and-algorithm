@@ -1,0 +1,18 @@
+a = [-9,3,4,6,8,9,10,30]
+x = 10
+
+l = 0
+r = len(a)-1
+
+while l <= r:
+    m = (l+r)//2
+
+    if a[m] == x:
+        print("Found at position",m+1)
+        break
+    elif a[m] < x:
+        l = m+1
+    else:
+        r = m-1
+else:
+    print("Not Found")
