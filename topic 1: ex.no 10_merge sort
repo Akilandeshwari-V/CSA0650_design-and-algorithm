@@ -1,0 +1,14 @@
+def merge_sort(a):
+    if len(a) > 1:
+        m = len(a)//2
+        l = a[:m]
+        r = a[m:]
+
+        merge_sort(l)
+        merge_sort(r)
+
+        a[:] = sorted(l + r)
+
+a = [5,2,8,1,3]
+merge_sort(a)
+print(a)
