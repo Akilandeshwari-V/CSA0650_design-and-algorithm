@@ -1,0 +1,6 @@
+from itertools import permutations
+
+c = [(1,2),(4,5),(7,1)]
+
+for i in permutations(c):
+    print(i)
