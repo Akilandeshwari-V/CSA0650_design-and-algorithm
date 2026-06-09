@@ -1,0 +1,16 @@
+a = [1, 2, 5, 36]
+x = 36
+
+l, r = 0, len(a)-1
+
+while l <= r:
+    m = (l+r)//2
+    if a[m] == x:
+        print("Found")
+        break
+    elif x < a[m]:
+        r = m-1
+    else:
+        l = m+1
+else:
+    print("Not Found")
