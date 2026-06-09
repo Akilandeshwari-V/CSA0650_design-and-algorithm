@@ -1,0 +1,13 @@
+words = ["This","is","an","example"]
+w = 16
+
+line = ""
+
+for i in words:
+    if len(line)+len(i)+1 <= w:
+        line += i+" "
+    else:
+        print(line.ljust(w))
+        line = i+" "
+
+print(line.ljust(w))
